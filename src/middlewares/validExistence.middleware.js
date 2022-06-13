@@ -6,7 +6,7 @@ export const validExistence = async (req, res, next)=>{
       console.log('teste')
       return res
         .status(404)
-        .send({ mensagem: 'Não existe nenhuma paleta cadastrada!' });
+        .send({ message: 'Não existe nenhuma paleta cadastrada!' });
     }
     next()
 }
